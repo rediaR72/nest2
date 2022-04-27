@@ -11,4 +11,4 @@ async function start() {
 }
 start()
 
-console.log('POSTGRESS_HOST+5687')
+console.log(`${process.env.POSTGRES_DB}`)

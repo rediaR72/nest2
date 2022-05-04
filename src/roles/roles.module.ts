@@ -4,7 +4,7 @@ import { RolesController } from './roles.controller'
 import { Role } from './roles.model'
 import { SequelizeModule } from '@nestjs/sequelize'
 import { User } from 'src/users/user.model'
-import { UserRoles } from './user-role.model'
+import { UserRoles } from './user_roles.model'
 
 @Module({
   providers: [RolesService],

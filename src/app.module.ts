@@ -5,7 +5,8 @@ import { User } from './users/user.model'
 import { UsersModule } from './users/users.module'
 import { RolesModule } from './roles/roles.module'
 import { Role } from './roles/roles.model'
-import { UserRoles } from './roles/user-role.model'
+import { UserRoles } from './roles/user_roles.model'
+import { AuthModule } from './auth/auth.module'
 
 @Module({
   controllers: [],
@@ -25,7 +26,8 @@ import { UserRoles } from './roles/user-role.model'
       autoLoadModels: true
     }),
     UsersModule,
-    RolesModule
+    RolesModule,
+    AuthModule
   ]
 })
 export class AppModule {}
